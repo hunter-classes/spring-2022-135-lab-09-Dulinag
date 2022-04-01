@@ -40,7 +40,7 @@ TEST_CASE("checks the correctness of the postion of the object moved correclty "
   CHECK(pos.y == -10);
   CHECK(pos.z == 100.4);
 }
-/*
+
 TEST_CASE("checks Creating objects dynamically "){
   double x = 10;
   double y = 25;
@@ -56,6 +56,7 @@ TEST_CASE("checks Creating objects dynamically "){
    move(ppos, pvel, 10.0);
 
 
-   CHECK(*ppos = 20);
+   CHECK((*ppos).x == 20);
+   CHECK((*ppos).y == 0);
+   CHECK((*ppos).z== 62);
 }
-*/

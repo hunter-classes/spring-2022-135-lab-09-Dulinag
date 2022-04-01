@@ -15,7 +15,7 @@ int main()
 
   std::cout << "Task B: " << std::endl;
   std::cout << "P Address: " << &pointP << std::endl;
-  std::cout << "P Address: " << &pointQ << std::endl;
+  std::cout << "Q Address: " << &pointQ << std::endl;
   Coord3D * ans = fartherFromOrigin(&pointP, &pointQ);
   std::cout << "answer: " << ans << std::endl;
 
@@ -37,10 +37,10 @@ move(&pos, &vel, 2.0);
  double y = 25;
  double z = 30;
 
-  double g = 1.0;
+  double g = 6.5;
 
   double i  = -2.5;
-  double j = 3.2;
+  double j = 7.2;
   Coord3D *ppos = createCoord3D(x,y,z);
   Coord3D *pvel = createCoord3D(g,i,j);
 
@@ -51,7 +51,7 @@ move(&pos, &vel, 2.0);
 
   deleteCoord3D(ppos); // release memory
   deleteCoord3D(pvel);
-
+  std::cout << std::endl;
 
 
 
